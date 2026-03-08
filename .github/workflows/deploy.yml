@@ -46,6 +46,6 @@ jobs:
             docker run -d \
               --name vika-landing \
               --restart always \
-              -p 3000:3000 \
+              -p 3002:3000 \
               ghcr.io/${{ github.repository }}:latest
             docker image prune -f
